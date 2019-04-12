@@ -16,7 +16,7 @@ pipeline {
     }
     stage ('Nexus') {
       steps {
-      nexusArtifactUploader artifacts: [[artifactId: 'crudApp', classifier: '', file: 'target/crudApp.war', type: 'war']], credentialsId: 'nexus', groupId: 'Central', nexusUrl: '18.216.204.179:8081/nexus', nexusVersion: 'nexus2', protocol: 'http', repository: 'releases', version: '1.3'
+      nexusArtifactUploader artifacts: [[artifactId: 'crudApp', classifier: '', file: 'target/crudApp.war', type: 'war']], credentialsId: 'nexus', groupId: 'Central', nexusUrl: '18.216.204.179:8081/nexus', nexusVersion: 'nexus2', protocol: 'http', repository: 'releases', version: '1.4'
       }
     }
     stage ('Copy to tomcat') {
