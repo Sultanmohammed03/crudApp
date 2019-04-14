@@ -11,6 +11,6 @@ Steps to run
 -Drop it in tomcat(7 or 8) webapps
 
 
--Access the app at
+-Access the app at u
  
  http://localhost:8080/crudApp
